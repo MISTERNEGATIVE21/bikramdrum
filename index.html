@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Drumstick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loading"></div>
+    <div class="keys">
+        <div data-key="KeyA" class="key">
+            <kbd>
+                A
+            </kbd>
+            <span class="sound">
+                clap
+            </span>
+        </div>
+        <div data-key="KeyS" class="key">
+            <kbd>
+                S
+            </kbd>
+            <span class="sound">
+                hihat
+            </span>
+        </div>
+        <div data-key="KeyD" class="key">
+            <kbd>
+                D
+            </kbd>
+            <span class="sound">
+                kick
+            </span>
+        </div>
+        <div data-key="KeyF" class="key">
+            <kbd>
+                F
+            </kbd>
+            <span class="sound">
+                openhat
+            </span>
+        </div>
+        <div data-key="KeyG" class="key">
+            <kbd>
+                G
+            </kbd>
+            <span class="sound">
+                boom
+            </span>
+        </div>
+        <div data-key="KeyH" class="key">
+            <kbd>
+                H
+            </kbd>
+            <span class="sound">
+                ride
+            </span>
+        </div>
+        <div data-key="KeyJ" class="key">
+            <kbd>
+                J
+            </kbd>
+            <span class="sound">
+                snare
+            </span>
+        </div>
+        <div data-key="KeyK" class="key">
+            <kbd>
+                K
+            </kbd>
+            <span class="sound">
+                tom
+            </span>
+        </div>
+        <div data-key="KeyL" class="key">
+            <kbd>
+                L
+            </kbd>
+            <span class="sound">
+                tink
+            </span>
+        </div>
+        <audio src="/sounds/boom.wav" preload="auto" data-key="KeyA"></audio>
+        <audio src="/sounds/clap.wav" preload="auto" data-key="KeyS"></audio>
+        <audio src="/sounds/hihat.wav" preload="auto" data-key="KeyD"></audio>
+        <audio src="/sounds/kick.wav" preload="auto" data-key="KeyF"></audio>
+        <audio src="/sounds/openhat.wav" preload="auto" data-key="KeyG"></audio>
+        <audio src="/sounds/ride.wav" preload="auto" data-key="KeyH"></audio>
+        <audio src="/sounds/snare.wav"  preload="auto" data-key="KeyJ"></audio>
+        <audio src="/sounds/tink.wav" preload="auto" data-key="KeyK"></audio>
+        <audio src="/sounds/tom.wav" preload="auto" data-key="KeyL"></audio>
+    </div>
+    <div class="playinput">
+        <textarea rows="1" cols="25" class="inputString"></textarea>
+        <button class="play">Play!</button>
+    </div>
+    <div class="set-gap">
+        <label for="gap-value">Gap(in ms)</label>
+        <input type="number" id="gap" name="gap-value">
+    </div>
+    <footer>
+        <p>Inspired from Javascript30 from <a href="https://wesbos.com/courses">WesBos</a>.</p>
+    </footer>
+</body>
+<script src="main.js"></script>
+
+</html>
